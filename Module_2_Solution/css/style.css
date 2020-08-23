@@ -1,0 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+h1{
+	text-align: center;
+	margin: 10px;
+}
+.section1, .section2, .section3{
+	width: 30%;
+	height: 200px;
+	background: #333;
+	border: 1px solid #000;
+	float: left;
+    margin: 10px;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 50%); 
+}
+.section1 h2{
+	position: relative;
+	background: green;
+	width: 30%;
+	float: right;
+	text-align: center;
+	border: 1px solid #000;
+	top: 0;
+}
+.section2 h2{
+	position: relative;
+	background: indianred;
+	width: 50%;
+	float: right;
+	text-align: center;
+	border: 1px solid #000;
+	top: 0;
+}
+.section3 h2{
+	position: relative;
+	background: royalblue;
+	width: 30%;
+	float: right;
+	text-align: center;
+	border: 1px solid #000;
+	margin: 0;
+}
+div p {
+	color: #fff;
+	bottom: -50px;
+	position: relative;
+	margin: 15px;
+	align-items: center;
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.section1, .section2{
+		width: 47%; 
+	}
+	.section3{
+		width: 96%;
+	}
+	.section1 h2, .section2 h2{
+		font-size: 20px;
+	}
+	.section1 p, .section2 p{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 767px){
+	.section1, .section2, .section3{
+		width: 97%;
+	}
+}
